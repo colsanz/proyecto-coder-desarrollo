@@ -1,0 +1,19 @@
+{
+  "name": "proyecto-coder-desarrollo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/colsanz/proyecto-coder-desarrollo.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/colsanz/proyecto-coder-desarrollo/issues"
+  },
+  "homepage": "https://github.com/colsanz/proyecto-coder-desarrollo#readme",
+  "description": ""
+}

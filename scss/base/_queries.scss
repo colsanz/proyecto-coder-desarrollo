@@ -1,0 +1,22 @@
+@media (max-width: 767px) {
+  // Responsive rules (ya están incluidas en _main y _footer directamente)
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  // Tablet-specific styles
+}
+@media (max-width: 991px) {
+  .navbar-collapse {
+    text-align: center;
+  }
+
+  .navbar-nav {
+    margin: 0 auto;
+    flex-direction: column;
+    align-items: center;
+
+    .nav-item {
+      margin-bottom: 10px;
+    }
+  }
+}

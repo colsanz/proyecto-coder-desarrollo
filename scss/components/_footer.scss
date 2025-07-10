@@ -1,0 +1,76 @@
+footer {
+  background-color: #f1f1f1;
+  padding: 20px;
+  font-family: $font-primary;
+  margin-top: 150px;
+}
+
+.footer-formulario {
+  max-width: 800px;
+  margin: 0 auto;
+
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    input[type="text"],
+    textarea {
+      padding: 12px;
+      border: 1px solid $color-grey-light;
+      border-radius: 5px;
+      font-family: $font-primary;
+      width: 100%;
+    }
+
+    textarea {
+      resize: vertical;
+      min-height: 120px;
+    }
+
+    input[type="submit"] {
+      @include btn-basic;
+      background-color: $color-blue;
+
+      &:hover {
+        background-color: $color-blue-dark;
+      }
+    }
+  }
+}
+
+.footer-izquierda,
+.footer-centro,
+.footer-derecha {
+  font-family: $font-primary;
+  font-size: 14px;
+  color: $color-grey-medium;
+  flex: 1;
+}
+
+.footer-derecha {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 20px;
+
+  a {
+    color: $color-blue;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  img {
+    height: 24px;
+  }
+}
+
+.footer-copy {
+  text-align: center;
+  font-size: 14px;
+  color: #555;
+  margin-top: 20px;
+}

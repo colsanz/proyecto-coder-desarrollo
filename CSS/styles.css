@@ -344,13 +344,13 @@ main section {
   justify-content: center;  
   gap: 40px;               
   padding: 60px;
-  flex-wrap: nowrap;         /*  una sola fila */
-  overflow-x: auto;          /* Permite scroll si la pantalla es pequeña */
+  flex-wrap: wrap;         /*  permite múltiples filas */
+  overflow-x: hidden;          /* oculta scroll horizontal */
 }
 
 .tarjeta2 {
-  flex: 0 0 500px;           /* Tamaño fijo de cada tarjeta */
-  height: 500px;
+  flex: 1 1 300px;           /* crece y se adapta al ancho */
+  height: 400px;
   background-color: #fff;
   border: 2px solid #ccc;
   border-radius: 10px;
