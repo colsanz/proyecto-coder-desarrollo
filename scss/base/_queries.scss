@@ -1,11 +1,57 @@
+// MÓVILES (hasta 767px)
 @media (max-width: 767px) {
-  // Responsive rules (ya están incluidas en _main y _footer directamente)
-}
+  // Layout general
+  main section,
+  .about-section,
+  .studies,
+  .galeria,
+  .galeria2 {
+    flex-direction: column;
+    padding: 40px 20px;
+    gap: 30px;
+  }
 
-@media (min-width: 768px) and (max-width: 1023px) {
-  // Tablet-specific styles
-}
-@media (max-width: 991px) {
+  // Textos del index
+  .texto {
+    text-align: center;
+
+    h1, h2, h3 {
+      text-align: center;
+      margin: 0 auto;  // Asegura que se centre en todos los lados
+      padding: 0;
+    }
+  }
+
+
+  // Imagen del index
+  .imagen {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .imagen img {
+    width: 100%;
+    max-width: 400px;
+    display: block;
+    margin: 0 auto;
+  }
+
+  // Flecha de regreso
+  .flecha-work {
+    justify-content: center;
+    padding: 20px 0;
+  }
+
+  // Tarjetas (contact / work)
+  .tarjeta,
+  .tarjeta2 {
+    max-width: 90%;
+    width: 100%;
+    border-radius: 20px;
+  }
+
+  // Navbar mobile - centrado
   .navbar-collapse {
     text-align: center;
   }
@@ -14,9 +60,151 @@
     margin: 0 auto;
     flex-direction: column;
     align-items: center;
+  }
+
+  .navbar-nav .nav-item {
+    margin-bottom: 10px;
+  }
+
+  .navbar-brand,
+  .nav-item {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+
+  // Footer
+  .footer-formulario,
+  .footer-centro,
+  .footer-derecha,
+  .footer-izquierda {
+    text-align: center;
+    margin: 0 auto;
+    padding: 10px;
+  }
+
+  .footer-derecha {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .footer-izquierda,
+  .footer-centro,
+  .footer-derecha {
+    flex: 1 1 100%;
+  }
+
+  // Contacto
+  .contacto {
+    justify-content: center;
+    text-align: center;
+  }
+}
+
+// TABLETS (768px – 1023px)
+@media (min-width: 768px) and (max-width: 1023px) {
+  main section,
+  .about-section,
+  .galeria,
+  .galeria2,
+  .studies {
+    padding: 60px 40px;
+    gap: 40px;
+    flex-direction: column;
+  }
+
+  .texto {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 0 20px;
+  }
+
+  .texto h1 {
+    font-size: 48px;
+  }
+
+  .texto h2 {
+    font-size: 60px;
+    padding-left: 0;
+  }
+
+  .texto h3 {
+    font-size: 36px;
+    margin-left: 0;
+  }
+
+  .imagen {
+    text-align: center;
+  }
+
+  .imagen img {
+    width: 100%;
+    max-width: 400px;
+  }
+
+  .footer-derecha {
+    justify-content: center;
+  }
+
+  .footer-izquierda {
+    text-align: center;
+    margin-left: 0;
+  }
+}
+
+/* Menú de navegación: margen en escritorio */
+#navbarSupportedContent {
+  @media (min-width: 992px) {
+    padding-right: 3rem;
+  }
+}
+
+/* Estilo del menú hamburguesa (responsive) */
+@media (max-width: 991px) {
+  .navbar-collapse {
+    text-align: center;
+  }
+
+  .navbar-nav {
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
 
     .nav-item {
       margin-bottom: 10px;
     }
+  }
+}
+
+
+@media (max-width: 550px) {
+  .texto h1 {
+    font-size: 36px;
+  }
+
+  .texto h2 {
+    font-size: 48px;
+    padding-left: 0;
+  }
+
+  .texto h3 {
+    font-size: 28px;
+    margin-left: 0;
+  }
+
+  .imagen img {
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+
+  main section {
+    flex-direction: column;
+    padding: 30px 10px;
+    gap: 20px;
+  }
+
+  .texto {
+    padding: 0 10px;
   }
 }

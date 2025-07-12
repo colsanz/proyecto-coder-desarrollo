@@ -7,3 +7,24 @@ header {
 .navbar-nav .nav-link {
   font-weight: 700;
 }
+
+.navbar-nav {
+  white-space: nowrap;
+  flex-wrap: nowrap;
+}
+.language-switcher {
+  a.lang-link {
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s ease;
+
+    &:hover {
+      color: #007BFF; // o el color que uses como primario
+      text-decoration: underline;
+    }
+  }
+}
