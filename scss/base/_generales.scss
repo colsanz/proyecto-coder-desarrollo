@@ -2,11 +2,33 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
 
 body {
-  font-family: "Montserrat", sans-serif;
+  font-family: var(--font-primary);
   margin: 0;
   padding: 0;
+  background-color: var(--bg-light);
+  color: var(--text-dark);
 }
 
-* {
-  box-sizing: border-box;
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  margin-bottom: 0.5em;
+}
+
+a {
+  color: var(--primary);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.container {
+  padding-left: 1rem;
+  padding-right: 1rem;
 }

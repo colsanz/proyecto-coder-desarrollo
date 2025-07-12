@@ -1,25 +1,8 @@
-$font-primary: 'Montserrat', sans-serif;
-$font-secondary: 'Raleway', sans-serif;
-
-$color-dark: #000;
-$color-grey-dark: #333;
-$color-grey-medium: #555;
-$color-grey-light: #ccc;
-$color-blue: #007BFF;
-$color-blue-dark: #0056b3;
-
-@mixin transition {
-  transition: 0.5s;
-}
-
-@mixin btn-basic {
-  padding: 10px 20px;
-  background-color: $color-dark;
-  color: white;
-  font-size: 16px;
-  border-radius: 5px;
-  text-decoration: none;
-  display: inline-block;
-  cursor: pointer;
-  @include transition;
+:root {
+  --font-primary: 'Montserrat', sans-serif;
+  --font-heading: 'Raleway', sans-serif;
+  --primary: #793379;
+  --bg-light: #f8f9fa;
+  --text-dark: #212529;
+  --text-muted: #6c757d;
 }
