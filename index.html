@@ -26,27 +26,26 @@
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
-        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 d-flex gap-3">
-          <li class="nav-item">
-            <a class="nav-link" href="./pages/about.html">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./pages/work.html">Work</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./pages/contact.html">Contact</a>
-          </li>
-        </ul>
-        <div class="d-flex gap-2">
-          <a href="./indexes.html" class="text-decoration-none">ES</a>
-          <a href="./indexfr.html" class="text-decoration-none">FR</a>
-        </div>
-      </div>
+      <div class="collapse navbar-collapse" id="navbarNav">
+  <div class="w-100">
+    <!-- Idiomas arriba -->
+    <div class="d-flex justify-content-end gap-2 mb-2 language-switcher">
+      <a href="./indexes.html" class="text-decoration-none">ES</a>
+      <a href="./indexfr.html" class="text-decoration-none">FR</a>
+    </div>
+
+    <!-- Menú principal abajo -->
+    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 d-flex gap-3 justify-content-end">
+      <li class="nav-item"><a class="nav-link" href="./pages/about.html">About</a></li>
+      <li class="nav-item"><a class="nav-link" href="./pages/work.html">Work</a></li>
+      <li class="nav-item"><a class="nav-link" href="./pages/contact.html">Contact</a></li>
+    </ul>
+  </div>
+</div>
     </nav>
   </header>
 
-  <main class="py-5">
+  <main class="d-flex align-items-center justify-content-center flex-grow-1">
     <section class="container">
       <div class="row align-items-center">
         <div class="col-12 col-md-6 text-center text-md-start">
@@ -56,7 +55,7 @@
           <a href="./pages/contact.html" class="btn btn-dark mt-4">Contact</a>
         </div>
         <div class="col-12 col-md-6 text-center mt-4 mt-md-0">
-          <img src="./img/logo.png" alt="COS image" class="img-fluid rounded">
+          <img src="./img/fotoperfil.png" alt="COS image" class="img-fluid rounded">
         </div>
       </div>
     </section>
