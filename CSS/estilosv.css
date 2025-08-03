@@ -4,7 +4,7 @@
 :root {
   --font-primary: "Montserrat", sans-serif;
   --font-heading: "Raleway", sans-serif;
-  --primary: #4C7F99;
+  --primary: #107772;
   --bg-light: #f8f9fa;
   --text-dark: #212529;
   --text-muted: #6c757d;
@@ -142,8 +142,7 @@ main {
   color: var(--primary);
 }
 
-body,
-html {
+body, html {
   height: 100%;
   margin: 0;
 }
@@ -169,138 +168,11 @@ main {
 }
 
 .about-img {
-  max-width: 400px;
-  /* Ajustar el tamaño deseado */
+  max-width: 300px; /* Ajustar el tamaño deseado */
   width: 100%;
   height: auto;
 }
 
-/* TIMELINE */
-.timeline-wrapper {
-  position: relative;
-  padding: 40px 0;
-  margin-top: 60px;
-}
-
-.timeline-wrapper h2 {
-  margin-top: -2.5rem;
-}
-
-.timeline {
-  padding-top: 2rem; /* añade espacio entre el h2 y la línea de tiempo */
-}
-
-.timeline::before {
-  content: "";
-  position: absolute;
-  top: 35%;
-  left: 0;
-  width: 100%;
-  height: 4px;
-  background-color: #ccc;
-  transform: translateY(-50%); /* 👈 Centra la línea verticalmente dentro del timeline */
-  z-index: 1;
-}
-
-.timeline .event {
-  display: flex;
-  flex-direction: column; /* 👈 Esto alinea el contenido en columna */
-  align-items: center; /* 👈 Centra horizontalmente */
-  text-align: center;
-  min-width: 100px;
-  z-index: 2;
-}
-
-/* El círculo del timeline */
-.icon {
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  display: inline-block;
-  background-color: currentColor;
-  position: relative;
-  z-index: 2;
-  border: 6px solid #f8f9fa;
-  /* Esto pone los círculos encima de la línea */
-}
-
-/* Colores personalizados para los íconos del timeline */
-.circle-uoc {
-  background-color: #E6EBED;
-  /* azul oscuro */
-}
-
-.circle-coderhouse1 {
-  background-color: #90B1C1;
-  /* verde azulado */
-}
-
-.circle-coderhouse2 {
-  background-color: #4C7F99;
-  /* naranja */
-}
-
-.circle-coderhouse3 {
-  background-color: #24556E;
-  /* verde */
-}
-
-.circle-coderhouse4 {
-  background-color: #0B3043;
-  /* gris oscuro */
-}
-
-.circle-coderhouse5 {
-  background-color: #002233;
-  /* púrpura para JS */
-}
-
-/* TIMELINE RESPONSIVE */
-@media (max-width: 768px) {
-  .timeline {
-    flex-direction: column;
-    align-items: flex-start;
-    position: relative;
-    padding-left: 2rem;
-  }
-  .timeline::before {
-    top: 0;
-    left: 32px;
-    width: 4px;
-    height: 100%;
-    transform: none;
-    background-color: #ccc;
-  }
-  .timeline .event {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    margin-bottom: 2rem;
-    width: 100%;
-  }
-  .timeline .event .icon {
-    margin-left: 7px;
-    margin-right: 1rem;
-    flex-shrink: 0;
-  }
-  .timeline .event-text {
-    display: flex;
-    flex-direction: column;
-  }
-  .timeline .event-header {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    font-weight: bold;
-  }
-  .timeline .event-year {
-    font-weight: bold;
-  }
-  .timeline .event-subtitle {
-    color: var(--text-muted);
-    font-size: 0.9rem;
-  }
-}
 footer {
   background-color: var(--bg-light);
   padding: 2rem 0;

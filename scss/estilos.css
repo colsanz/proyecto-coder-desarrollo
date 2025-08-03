@@ -1,3 +1,82 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap");
+:root {
+  --font-primary: "Montserrat", sans-serif;
+  --font-heading: "Raleway", sans-serif;
+  --primary: #4C7F99;
+  --bg-light: #f8f9fa;
+  --text-dark: #212529;
+  --text-muted: #6c757d;
+}
+
+body {
+  font-family: var(--font-primary);
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg-light);
+  color: var(--text-dark);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  margin-bottom: 0.5em;
+}
+
+a {
+  color: var(--primary);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.container {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+@media (max-width: 767px) {
+  .responsive-text-center {
+    text-align: center;
+  }
+}
+header {
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.navbar-brand img {
+  height: 80px;
+}
+
+.navbar-nav .nav-link {
+  font-weight: 600;
+  color: var(--text-dark);
+}
+
+.navbar-nav .nav-link.active {
+  color: var(--primary);
+}
+
+.language-switcher a {
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: var(--text-dark);
+  margin-left: 0.5rem;
+}
+
+.language-switcher a:hover {
+  color: var(--primary);
+}
+
 main {
   padding-top: 10rem;
   padding-bottom: 3rem;
@@ -38,14 +117,14 @@ main {
 .btn-primary-custom {
   background-color: var(--primary);
   border-color: var(--primary);
-  color: #fff
+  color: #fff;
 }
 
 .btn-primary-custom:hover {
   background-color: #000000;
   /* un poco más oscuro al pasar el mouse */
   border-color: #000000;
-  color: #fff
+  color: #fff;
 }
 
 .flecha-peq {
@@ -102,12 +181,15 @@ main {
   padding: 40px 0;
   margin-top: 60px;
 }
+
 .timeline-wrapper h2 {
   margin-top: -2.5rem;
 }
+
 .timeline {
   padding-top: 2rem; /* añade espacio entre el h2 y la línea de tiempo */
 }
+
 .timeline::before {
   content: "";
   position: absolute;
@@ -119,10 +201,11 @@ main {
   transform: translateY(-50%); /* 👈 Centra la línea verticalmente dentro del timeline */
   z-index: 1;
 }
+
 .timeline .event {
   display: flex;
   flex-direction: column; /* 👈 Esto alinea el contenido en columna */
-  align-items: center;     /* 👈 Centra horizontalmente */
+  align-items: center; /* 👈 Centra horizontalmente */
   text-align: center;
   min-width: 100px;
   z-index: 2;
@@ -180,7 +263,6 @@ main {
     position: relative;
     padding-left: 2rem;
   }
-
   .timeline::before {
     top: 0;
     left: 32px;
@@ -189,7 +271,6 @@ main {
     transform: none;
     background-color: #ccc;
   }
-
   .timeline .event {
     display: flex;
     flex-direction: row;
@@ -197,31 +278,49 @@ main {
     margin-bottom: 2rem;
     width: 100%;
   }
-
   .timeline .event .icon {
     margin-left: 7px;
     margin-right: 1rem;
     flex-shrink: 0;
   }
-
   .timeline .event-text {
     display: flex;
     flex-direction: column;
   }
-
   .timeline .event-header {
     display: flex;
     align-items: center;
     gap: 0.5rem;
     font-weight: bold;
   }
-
   .timeline .event-year {
     font-weight: bold;
   }
-
   .timeline .event-subtitle {
     color: var(--text-muted);
     font-size: 0.9rem;
   }
 }
+footer {
+  background-color: var(--bg-light);
+  padding: 2rem 0;
+  font-size: 0.875rem;
+  color: var(--text-muted);
+}
+
+footer a {
+  color: var(--primary);
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+footer img {
+  height: 24px;
+}
+
+.footer-copy {
+  text-align: center;
+  margin-top: 1rem;
+}/*# sourceMappingURL=estilos.css.map */
