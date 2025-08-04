@@ -225,3 +225,11 @@ main {
     font-size: 0.9rem;
   }
 }
+
+.zoom-img {
+  transition: transform 0.3s ease;
+}
+
+.zoom-img:hover {
+  transform: scale(1.05);
+}

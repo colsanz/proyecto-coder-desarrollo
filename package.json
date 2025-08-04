@@ -15,5 +15,8 @@
     "url": "https://github.com/colsanz/proyecto-coder-desarrollo/issues"
   },
   "homepage": "https://github.com/colsanz/proyecto-coder-desarrollo#readme",
-  "description": ""
+  "description": "",
+  "devDependencies": {
+    "saas": "^1.0.0"
+  }
 }
