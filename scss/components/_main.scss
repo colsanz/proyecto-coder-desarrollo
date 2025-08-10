@@ -271,3 +271,23 @@ main {
   color: #fff;
   text-decoration: none;
 }
+.col-5-img {
+    flex: 0 0 20%;    /* Ocupa el 20% del ancho */
+    max-width: 20%;
+}
+
+@media (max-width: 768px) {
+    .col-5-img {
+        flex: 0 0 50%;  /* En móviles, 2 por fila */
+        max-width: 50%;
+    }
+}
+
+@media (max-width: 576px) {
+    .col-5-img {
+        flex: 0 0 100%; /* En pantallas muy pequeñas, 1 por fila */
+        max-width: 100%;
+    }
+}
+
+
